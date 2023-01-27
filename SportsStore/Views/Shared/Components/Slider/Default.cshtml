@@ -1,0 +1,18 @@
+﻿@model IEnumerable<SportsStore.Models.Product>
+   
+@foreach (var item in Model)
+{
+<div class="carousel-item active" style="background-image: url(@item.Name)">
+    <div class="carousel-container ">
+        <div class="container">
+            <p>@item.Description</p>
+        </div>
+    </div>
+</div>
+}
+ 
+                
+
+
+
+

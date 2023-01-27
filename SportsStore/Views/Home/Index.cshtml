@@ -1,0 +1,27 @@
+﻿ @model ProductsListViewModel
+
+<partial name="Slider" />
+
+
+
+
+<div class="container">
+    <div class="row m-1 p-1">
+        <div class="col-12 "> <partial name="Dunya"></div>
+        <hr />
+        <div class="col-12"> <partial name="Turkiye"></div>
+        <hr />
+        <div class="col-12"> <partial name="Ekonomi" /></div>
+        <hr />
+        <div class="col-12"> <partial name="Spor" /></div>
+        <hr />
+        <div class="col-12"> <partial name="Magazin" /></div>
+
+
+        <div page-model="@Model.PagingInfo" page-action="Index" page-classes-enabled="true"
+             page-class="btn" page-class-normal="btn-outline-dark"
+             page-class-selected="btn-primary" page-url-category="@Model.CurrentCategory"
+             class="btn-group pull-right m-1">
+        </div>
+        </div>
+    </div>

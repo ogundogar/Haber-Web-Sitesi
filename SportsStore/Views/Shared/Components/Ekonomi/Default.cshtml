@@ -1,0 +1,19 @@
+﻿@model IEnumerable<SportsStore.Models.Product>
+
+<div class="col-12 card">
+    <div class="container ">
+        @foreach (var item in Model)
+        {
+            <div class="row">
+                <div class="col-9 mt-3">
+
+                    <h5>@item.Category</h5><!--haber Tarihi-->
+                    <p class="dikeyparagraf">@item.Description</p><!--içeriği-->
+                </div>
+                <div class="col-3 mt-5"><img src="@item.Name" alt="" /></div><!--Haber resmi-->
+            </div>
+            <br />
+        }
+    </div>
+</div>
+<br />
